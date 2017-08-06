@@ -43,7 +43,6 @@ var articles = {
         <p>
             This is the content for my first trail. his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.
         </p>
-        }
          `
 }
 }; 
