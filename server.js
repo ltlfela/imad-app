@@ -5,8 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-var articleOne = {
+var articles = {
+     'article-one': {
     title: 'Article One | IMAD',
     heading: 'Article One',
     date: 'Sep 5, 2017',
@@ -18,7 +18,35 @@ var articleOne = {
             This is the content for my first trail. his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.
         </p> 
          `
-};
+},
+     'article-two': {
+         title: 'Article Two | IMAD',
+    heading: 'Article Two',
+    date: 'Sep 5, 2017',
+    content:`
+    <p>
+            This is the content for my first trail. his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.
+        </p>
+        <p>
+            This is the content for my first trail. his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.
+        </p> 
+         `
+     },
+     'article-three': {
+         title: 'Article Three | IMAD',
+    heading: 'Article Three',
+    date: 'Sep 5, 2017',
+    content:`
+    <p>
+            This is the content for my first trail. his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.
+        </p>
+        <p>
+            This is the content for my first trail. his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.
+        </p>
+        }
+         `
+}
+}; 
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
@@ -52,7 +80,7 @@ var htmlTemplate = `
 
 </html>
 `;
-return htmlTemplate
+return htmlTemplate;
 }
 
 
@@ -60,15 +88,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get("/article-one", function(req, res) {
-   res.send(createTemplate(articleOne));
+app.get("/:articleName", function(req, res) {
+    // articleName == article-one
+    // articles[aarticlesname] == {} content object for article one
+    var articleName = reg.params.articleName;
+   res.send(createTemplate(articles[articleName]));
 });
-app.get("/article-two", function(req, res) {
-    res.send("Article Two is here");
-} );
-app.get("/article-three", function(req, res) {
-    res.send("Article Three is here");
-} );
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
