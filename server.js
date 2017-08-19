@@ -13,47 +13,7 @@ var config = {
     password: process.env.DB_PASSWORD
 }
 
-var articles = {
-     'article-one': {
-    title: 'Article One | IMAD',
-    heading: 'Article One',
-    date: 'Sep 5, 2017',
-    content:`
-    <p>
-            This is the content for my first trail. his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.
-        </p>
-        <p>
-            This is the content for my first trail. his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.
-        </p> 
-         `
-},
-     'article-two': {
-         title: 'Article Two | IMAD',
-    heading: 'Article Two',
-    date: 'Sep 5, 2017',
-    content:`
-    <p>
-            This is the content for my first trail. his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.
-        </p>
-        <p>
-            This is the content for my first trail. his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.
-        </p> 
-         `
-     },
-     'article-three': {
-         title: 'Article Three | IMAD',
-    heading: 'Article Three',
-    date: 'Sep 5, 2017',
-    content:`
-    <p>
-            This is the content for my first trail. his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.
-        </p>
-        <p>
-            This is the content for my first trail. his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.his is the content for my first trail.
-        </p>
-         `
-}
-}; 
+
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
