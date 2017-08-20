@@ -68,7 +68,7 @@ app.get('/test-db', function(req, res) {
      });
 });
 
-app.get('/articlesss/:articleName', function(req, res) {
+app.get('/articles/:articleName', function(req, res) {
     // articleName == article-one
     // articles[aarticlesname] == {} content object for article one
  
