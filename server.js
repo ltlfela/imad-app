@@ -55,6 +55,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var counter = 0;
+app.get('/counter', function (req, res) {
+    counter = counter + 1;
+    res.send(counter.toString());
+});
+
 var pool = new Pool(config);
 
 app.get('/test-db', function(req, res) {
