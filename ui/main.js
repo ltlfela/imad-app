@@ -1,1 +1,8 @@
-console.log('Loaded!');
+//Counter code
+var button = document.getElementById('counter');
+button.onclick = function() {
+  
+  counter = counter + 1;
+   var span = dcoument.getElementById('count');
+   span.innerHTML = counter.toString();
+};
