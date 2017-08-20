@@ -24,4 +24,3 @@ button.onclick = function () {
   request.send(null);
   
 };
-console.log("main.js loaded");
