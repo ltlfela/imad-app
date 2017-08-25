@@ -62,18 +62,18 @@ var name = nameInput.value;
 
 //Registration
 
-var submit3 = document.getElementById('register_btn');
-submit3.onclick = function () {
+var submit = document.getElementById('register_btn');
+submit.onclick = function () {
     
-  var request3 = new XMLHttpRequest();
+  var request = new XMLHttpRequest();
   
   // Capture the response and store it in a variable
-  request3.onreadystatechange = function () {
-      if (request3.readyState === XMLHttpRequest.DONE) {
+  request.onreadystatechange = function () {
+      if (request.readyState === XMLHttpRequest.DONE) {
           // Take some action
-          if (request3.status === 200) {
+          if (request.status === 200) {
               alert('Registration successfully');
-  }else if (request3.status === 500) {
+  }else if (request.status === 500) {
       alert('Something went wrong');
           }
       }
