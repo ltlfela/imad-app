@@ -120,6 +120,6 @@ submit2.onclick = function () {
   
   request2.open('POST', 'http://ltlfela.imad.hasura-app.io/login', true);
   request2.setRequestHeader('Content-Type', 'application/json');
-  request2.send(JSON.stringify({username: username, password: password}));
+  request2.send(JSON.stringify({username: username2, password: password2}));
   
 };
