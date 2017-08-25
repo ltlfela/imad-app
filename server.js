@@ -2,6 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
+var bodyParser = require('body-parser');
 
 var config = {
     user: 'ltlfela',
@@ -13,6 +14,7 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
+app.use(bodyParser.json());
 
 
 function createTemplate (data) {
