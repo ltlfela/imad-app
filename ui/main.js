@@ -62,7 +62,7 @@ var name = nameInput.value;
 
 //Registration
 
-var submit3 = document.getElementById('submit_btn3');
+var submit3 = document.getElementById('register_btn');
 submit3.onclick = function () {
     
   var request3 = new XMLHttpRequest();
@@ -91,7 +91,7 @@ submit3.onclick = function () {
 
 //Submit username/password
 
-var submit2 = document.getElementById('submit_btn2');
+var submit2 = document.getElementById('login_btn');
 submit2.onclick = function () {
     
     // Create a request object to the counter endpoint
