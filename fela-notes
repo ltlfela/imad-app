@@ -1,1 +1,2 @@
-
+I made a simple mistake of writing toDatString()} for toDateString()} which takes me days to figure out that it is just a spelling mistake
+Therefore bad editor doesnt give warnings for funnctions spelling mistakes, therefore take much care
