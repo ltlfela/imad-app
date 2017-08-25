@@ -117,7 +117,8 @@ submit3.onclick = function () {
   };
   
   // Tah hian create Id a ngai ang
-
+   username = document.getElementById('username').value;
+   password = document.getElementById('password').value;
   
   console.log(username);
   console.log(password);
