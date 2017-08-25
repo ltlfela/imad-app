@@ -26,7 +26,6 @@ button.onclick = function () {
 
 //Submit Name
 
-
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     
@@ -63,7 +62,6 @@ var name = nameInput.value;
 
 //Submit username/password
 
-
 var submit2 = document.getElementById('submit_btn2');
 submit2.onclick = function () {
     
@@ -92,6 +90,40 @@ submit2.onclick = function () {
   console.log(password);
   
   request2.open('POST', 'http://ltlfela.imad.hasura-app.io/login', true);
+  request2.setRequestHeader('Content-Type', 'application/json');
+  request2.send(JSON.stringify({username: username, password: password}));
+  
+};
+
+
+//Registration
+
+var submit3 = document.getElementById('submit_btn3');
+submit3.onclick = function () {
+    
+  var request3 = new XMLHttpRequest();
+  
+  // Capture the response and store it in a variable
+  request3.onreadystatechange = function () {
+      if (request3.readyState === XMLHttpRequest.DONE) {
+          // Take some action
+          if (request3.status === 200) {
+              alert('Registration successfully');
+  }else if (request3.status === 500) {
+      alert('Something went wrong');
+          }
+      }
+      // NOt done yet
+  };
+  
+  // Tah hian create Id a ngai ang
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+  
+  console.log(username);
+  console.log(password);
+  
+  request2.open('POST', 'http://ltlfela.imad.hasura-app.io/create-user', true);
   request2.setRequestHeader('Content-Type', 'application/json');
   request2.send(JSON.stringify({username: username, password: password}));
   
