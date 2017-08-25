@@ -60,3 +60,39 @@ var name = nameInput.value;
   
   
 };
+
+//Submit username/password
+
+
+var submit2 = document.getElementById('submit_btn');
+submit2.onclick = function () {
+    
+    // Create a request object to the counter endpoint
+  var request2 = new XMLHttpRequest();
+  
+  // Capture the response and store it in a variable
+  request2.onreadystatechange = function () {
+      if (request2.readyState === XMLHttpRequest.DONE) {
+          // Take some action
+          if (request2.status === 200) {
+              alert('logged in successfully');
+  } else if (request.status === 403) {
+      alert('Username/password not correct');
+  }else if (request.status === 500) {
+      alert('Something went wrong');
+          }
+      }
+      // NOt done yet
+  };
+  
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+  
+  console.log(username);
+  console.log(passowrd);
+  
+  request.open('POST', 'http://ltlfela.imad.hasura-app.io/submit-name?name=' + name, true);
+  request.setRequestHeader('Content-Type', 'application/json');
+  request.send(JSON.stringify({username: username, password: password}));
+  
+};
