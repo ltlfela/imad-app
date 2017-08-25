@@ -80,16 +80,9 @@ submit3.onclick = function () {
       // NOt done yet
   };
   
-  // Tah hian create Id a ngai ang
- //  username = document.getElementById('username').value;
-   //password = document.getElementById('password').value;
-  
- // console.log(username);
- // console.log(password);
-  
   request3.open('POST', 'http://ltlfela.imad.hasura-app.io/create-user', true);
-  request3.setRequestHeader('Content-Type', 'application/json');
-  request3.send(JSON.stringify({username: username, password: password}));
+  //request3.setRequestHeader('Content-Type', 'application/json');
+  //request3.send(JSON.stringify({username: username, password: password}));
   
 };
 
@@ -124,7 +117,7 @@ submit2.onclick = function () {
   
   request2.open('POST', 'http://ltlfela.imad.hasura-app.io/login', true);
   request2.setRequestHeader('Content-Type', 'application/json');
-  //request2.send(JSON.stringify({username: username, password: password}));
+  request2.send(JSON.stringify({username: username, password: password}));
   
 };
 
