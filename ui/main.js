@@ -115,8 +115,8 @@ submit2.onclick = function () {
   var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
   
-  console.log(username2);
-  console.log(password2);
+  console.log(username);
+  console.log(password);
   
   request2.open('POST', 'http://ltlfela.imad.hasura-app.io/login', true);
   request2.setRequestHeader('Content-Type', 'application/json');
