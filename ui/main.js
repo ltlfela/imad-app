@@ -64,7 +64,7 @@ var name = nameInput.value;
 //Submit username/password
 
 
-var submit2 = document.getElementById('submit_btn');
+var submit2 = document.getElementById('submit_btn2');
 submit2.onclick = function () {
     
     // Create a request object to the counter endpoint
