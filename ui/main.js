@@ -125,6 +125,6 @@ submit3.onclick = function () {
   
   request3.open('POST', 'http://ltlfela.imad.hasura-app.io/create-user', true);
   request3.setRequestHeader('Content-Type', 'application/json');
-  //request3.send(JSON.stringify({username: username, password: password}));
+  request3.send(JSON.stringify({username: username, password: password}));
   
 };
