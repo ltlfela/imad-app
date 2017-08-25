@@ -76,9 +76,9 @@ submit2.onclick = function () {
           // Take some action
           if (request2.status === 200) {
               alert('logged in successfully');
-  } else if (request.status === 403) {
+  } else if (request2.status === 403) {
       alert('Username/password not correct');
-  }else if (request.status === 500) {
+  }else if (request2.status === 500) {
       alert('Something went wrong');
           }
       }
@@ -91,8 +91,8 @@ submit2.onclick = function () {
   console.log(username);
   console.log(passowrd);
   
-  request.open('POST', 'http://ltlfela.imad.hasura-app.io/submit-name?name=' + name, true);
-  request.setRequestHeader('Content-Type', 'application/json');
-  request.send(JSON.stringify({username: username, password: password}));
+  request2.open('POST', 'http://ltlfela.imad.hasura-app.io/submit-name?name=' + name, true);
+  request2.setRequestHeader('Content-Type', 'application/json');
+  request2.send(JSON.stringify({username: username, password: password}));
   
 };
