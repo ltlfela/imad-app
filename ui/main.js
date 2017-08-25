@@ -91,21 +91,21 @@ submit.onclick = function () {
 
 //Submit username/password
 
-var submit2 = document.getElementById('login_btn');
-submit2.onclick = function () {
+var submit = document.getElementById('login_btn');
+submit.onclick = function () {
     
     // Create a request object to the counter endpoint
-  var request2 = new XMLHttpRequest();
+  var request = new XMLHttpRequest();
   
   // Capture the response and store it in a variable
-  request2.onreadystatechange = function () {
-      if (request2.readyState === XMLHttpRequest.DONE) {
+  request.onreadystatechange = function () {
+      if (request.readyState === XMLHttpRequest.DONE) {
           // Take some action
-          if (request2.status === 200) {
+          if (request.status === 200) {
               alert('logged in successfully');
-  } else if (request2.status === 403) {
+  } else if (request.status === 403) {
       alert('Username/password not correct');
-  }else if (request2.status === 500) {
+  }else if (request.status === 500) {
       alert('Something went wrong');
           }
       }
@@ -118,8 +118,8 @@ submit2.onclick = function () {
   console.log(username);
   console.log(password);
   
-  request2.open('POST', 'http://ltlfela.imad.hasura-app.io/login', true);
-  request2.setRequestHeader('Content-Type', 'application/json');
-  request2.send(JSON.stringify({username: username, password: password}));
+  request.open('POST', 'http://ltlfela.imad.hasura-app.io/login', true);
+  request.setRequestHeader('Content-Type', 'application/json');
+  request.send(JSON.stringify({username: username, password: password}));
   
 };
