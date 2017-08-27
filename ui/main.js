@@ -180,3 +180,5 @@ var name = nameInput.value;
   
 };
 }
+
+loadLogin();
