@@ -117,8 +117,6 @@ function loadLogin () {
 }
 
 
-
-
 //Counter code
 var button = document.getElementById('counter');
 
