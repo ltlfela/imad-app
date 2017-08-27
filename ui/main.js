@@ -1,3 +1,20 @@
+function loadLoginForm () {
+
+var loginHTML = '
+<h3> Login to unluck greatness</h3>
+<div> 
+<input type="text" id="username" placeholder="username" />
+<input type="password" id="password" />
+</br>
+<input type="submit" value="Login" id="login_btn" />
+<input type="submit" value="Register" id="register_btn" />
+</div>
+';
+
+document.getElementById().innerHTML = loginHTML;
+
+}
+
 //Counter code
 var button = document.getElementById('counter');
 
