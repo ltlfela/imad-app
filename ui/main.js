@@ -27,12 +27,17 @@ submit.onclick = function () {
       if (request.readyState === XMLHttpRequest.DONE) {
           // Take some action
           if (request.status === 200) {
-              alert('logged in successfully');
+              submit.value = 'Success';
   } else if (request.status === 403) {
-      alert('Username/password not correct');
+      submit.value = 'Invalid credentials. Try again?';
   }else if (request.status === 500) {
-      alert('Something went wrong');
+      alert ('Something went wrong');
+      submit.value = 'Login';
+          } else {
+              alert ('Something went wrong');
+      submit.value = 'Login'; 
           }
+          loadLogin();
       }
       // NOt done yet
   };
@@ -47,16 +52,12 @@ submit.onclick = function () {
   request.setRequestHeader('Content-Type', 'application/json');
   request.send(JSON.stringify({username: username, password: password}));
   
-};
+  submit.value = 'Loggin in...';
+  
+  //Registration
 
-
-
-}
-
-//Registration
-
-var submit = document.getElementById('register_btn');
-submit.onclick = function () {
+var register = document.getElementById('register_btn');
+register.onclick = function () {
     
   var request = new XMLHttpRequest();
   
@@ -66,8 +67,10 @@ submit.onclick = function () {
           // Take some action
           if (request.status === 200) {
               alert('Registration successfully');
-  }else if (request.status === 500) {
-      alert('Something went wrong');
+              register.value = 'Registered ass';
+  } else {
+      alert('Something went wrong, cannot register ass');
+      register.value = 'Register';
           }
       }
       // NOt done yet
@@ -80,7 +83,39 @@ submit.onclick = function () {
   request.setRequestHeader('Content-Type', 'application/json');
   request.send(JSON.stringify({username: username, password: password}));
   
+  register.value = 'Registering...';
+  
 };
+};
+
+function loadLoggedInUser (username) {
+    var loginArea = document.getElementById('login_area');
+    loginArea.innerHTML = `
+    <h3> Hi ass <i> ${username} </i></h3>
+    <a href="/logout">Logout</a>
+    `;
+}
+
+function loadLogin () {
+    // Check if the user is already logged in
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            if (request.status === 200) {
+                loadLoggedInUser(this.responseText);
+            } else {
+                loadLoginForm();
+            }
+        }
+    };
+    
+    request.open('GET', '/check-login', true);
+    request.send(null);
+}
+
+
+}
+
 
 
 
