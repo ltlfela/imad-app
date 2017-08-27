@@ -54,6 +54,8 @@ submit.onclick = function () {
   
   submit.value = 'Loggin in...';
   
+};
+  
   //Registration
 
 var register = document.getElementById('register_btn');
@@ -84,9 +86,8 @@ register.onclick = function () {
   request.send(JSON.stringify({username: username, password: password}));
   
   register.value = 'Registering...';
-  
 };
-};
+}
 
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
@@ -113,8 +114,6 @@ function loadLogin () {
     request.send(null);
 }
 
-
-}
 
 
 //Counter code
