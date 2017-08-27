@@ -118,6 +118,7 @@ function loadLogin () {
 
 
 //Counter code
+function counter () {
 var button = document.getElementById('counter');
 
 button.onclick = function () {
@@ -142,9 +143,10 @@ button.onclick = function () {
   request.open('GET', 'http://ltlfela.imad.hasura-app.io/counter', true);
   request.send(null);
 };
+}
 
 //Submit Name
-
+function submitName () {
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     
@@ -176,6 +178,5 @@ var name = nameInput.value;
   request.open('GET', 'http://ltlfela.imad.hasura-app.io/submit-name?name=' + name, true);
   request.send(null);
   
-  
 };
-
+}
