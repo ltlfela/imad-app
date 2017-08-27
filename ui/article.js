@@ -34,7 +34,7 @@ function loadCommentForm () {
         
         // Make the request
         var comment = document.getElementById('comment_text').value;
-        request.open('POST', '/submit-comment/' + currentArticleTitle, true);
+        request.open('POST', 'http://ltlfela.imad.hasura-app.io/submit-comment/' + currentArticleTitle, true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({comment: comment}));  
         submit.value = 'Submitting...';
@@ -53,7 +53,7 @@ function loadLogin () {
         }
     };
     
-    request.open('GET', '/check-login', true);
+    request.open('GET', 'http://ltlfela.imad.hasura-app.io/check-login', true);
     request.send(null);
 }
 
@@ -90,7 +90,7 @@ function loadComments () {
         }
     };
     
-    request.open('GET', '/get-comments/' + currentArticleTitle, true);
+    request.open('GET', 'http://ltlfela.imad.hasura-app.io/get-comments/' + currentArticleTitle, true);
     request.send(null);
 }
 
