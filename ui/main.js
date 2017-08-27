@@ -1,3 +1,4 @@
+
 function loadLoginForm () {
 
 var loginHTML = '
@@ -5,7 +6,7 @@ var loginHTML = '
 <div> 
 <input type="text" id="username" placeholder="username" />
 <input type="password" id="password" />
-</br>
+<br/>
 <input type="submit" value="Login" id="login_btn" />
 <input type="submit" value="Register" id="register_btn" />
 </div>
