@@ -12,7 +12,7 @@ var loginHTML = `
 </div>
 `;
 
-document.getElementById().innerHTML = loginHTML;
+document.getElementById('login_area').innerHTML = loginHTML;
 
 //Submit username/password
 
