@@ -50,13 +50,13 @@ body {
     color: white;
     margin: 0 auto;
     font-family: sans-serif;
-    top:350px;left:100px;position:absolute;z-index:25
+    top:350px;left:640px;position:absolute;z-index:25
 }
 
 .tattoo {
     color: black;
     margin: 0 auto;
     font-family: sans-serif;
-    top:400px;left:300px;position:absolute;z-index:25
+    top:400px;left:100px;position:absolute;z-index:25
 }
   
