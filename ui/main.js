@@ -6,7 +6,6 @@ var loginHTML = `
 <div> 
 <input type="text" id="username" placeholder="username" />
 <input type="password" id="password" placeholder="password" />
-<br/>
 <input type="submit" value="Login" id="login_btn" />
 <input type="submit" value="Register" id="register_btn" />
 </div>
