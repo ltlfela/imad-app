@@ -43,7 +43,9 @@ body {
 
 .headPad { 
     display: inline; 
-    padding-left: 500px;
+      color: white;
+     font-family: sans-serif;
+    padding-left: 200px;
     }
 
 .inline {
