@@ -42,5 +42,6 @@ body {
 
 .headPad {
     padding: 1px 1px 1px 700px;
+        display: inline; 
 }       
      
