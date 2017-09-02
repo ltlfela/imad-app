@@ -1,6 +1,8 @@
 /* 
 notes:
 Can register blank and once that is done can login with blank
+Count hi value stored a ngai
+Tattoo print 
 
 */
 
