@@ -205,5 +205,7 @@ var name = nameInput.value;
 }
 
 loadLogin();
-
 loadArticles();
+counter();
+submitName();
+
