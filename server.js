@@ -37,8 +37,8 @@ var htmlTemplate = `
     </title>
     <meta name="viewpoint" content="width=device-width, initial-scale=1">
   <link href="/ui/style.css" rel="stylesheet" />
-  <style>
   
+  <style>
 #comment_form {
     width:900px;
     margin:0 auto;   
@@ -48,6 +48,7 @@ var htmlTemplate = `
     color:#FFF;
 }
 </style>
+
 </head>    
 <body>
     <div class="container">
