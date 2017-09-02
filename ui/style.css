@@ -59,4 +59,11 @@ body {
     font-family: sans-serif;
     top:400px;left:55px;position:absolute;z-index:25
 }
+ 
+.articles {
+    color: black;
+    margin: 0 auto;
+    font-family: sans-serif;
+    top:650px;position:absolute;z-index:25
+} 
   
