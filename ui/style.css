@@ -35,10 +35,12 @@ body {
             padding-right: 20px;
         }
 
-.headPad {
-    padding: 1px 1px 1px 700px;
-}       
-        
+   
 .inline { 
     display: inline; 
     }
+
+.headPad {
+    padding: 1px 1px 1px 700px;
+}       
+     
