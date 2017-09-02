@@ -1,8 +1,10 @@
 body {
     font-family: sans-serif;
     background-color: lightgrey;
-    background-image: url("https://static.pexels.com/photos/209978/pexels-photo-209978.jpeg");
-    margin-top: 60px;
+    div {
+    background: url("https://static.pexels.com/photos/209978/pexels-photo-209978.jpeg");
+    background-size: 80px 60px;
+    background-repeat: no-repeat;
 }
 
 .center {
