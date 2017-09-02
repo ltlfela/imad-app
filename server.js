@@ -39,7 +39,7 @@ var htmlTemplate = `
   <link href="/ui/style.css" rel="stylesheet" />
   
   <style>
-#comment_form {
+div {
     width:900px;
     margin:0 auto;   
     /*temporary text styles below*/
