@@ -37,17 +37,6 @@ var htmlTemplate = `
     </title>
     <meta name="viewpoint" content="width=device-width, initial-scale=1">
   <link href="/ui/style.css" rel="stylesheet" />
-  
-  <style>
-div {
-    width:900px;
-    margin:0 auto;   
-    /*temporary text styles below*/
-    text-align:left;
-    background-color:black;
-}
-</style>
-
 </head>    
 <body>
     <div class="container">
