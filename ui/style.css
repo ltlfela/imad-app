@@ -64,7 +64,7 @@ body {
     margin: 0 auto;
     font-family: sans-serif;
     top:400px;left:55px;position:absolute;z-index:25;
-    padding:100px 50px 100px 50px;  -moz-border-radius: 5px;  -webkit-border-radius: 5px; border-radius: 5px;
+    -moz-border-radius: 5px;  -webkit-border-radius: 5px; border-radius: 5px;
 }
  
 .articles {
