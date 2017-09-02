@@ -45,7 +45,7 @@ var htmlTemplate = `
     /*temporary text styles below*/
     text-align:left;
     font-weight:bold;
-    color:#FFF;
+    color:black;
 }
 </style>
 
