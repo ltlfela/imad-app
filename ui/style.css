@@ -34,7 +34,7 @@ body {
     .container {
             max-width: 900px;
             color: white;
-            margin: 2000px;
+            margin: 0 auto;
             font-family: sans-serif;
             padding-left: 20px;
             padding-right: 20px;
