@@ -34,6 +34,10 @@ body {
             padding-left: 20px;
             padding-right: 20px;
         }
+
+.padding {
+    padding: 25px 50px 75px 100px;
+}       
         
 .inline { 
     display: inline; 
