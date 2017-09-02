@@ -36,12 +36,12 @@ body {
         }
 
    
-.inline { 
+.headPad { 
     display: inline; 
     padding-right: 150px;
     }
 
-.headPad {
+.inline {
      display: inline; 
 }       
      
