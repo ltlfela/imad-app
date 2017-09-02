@@ -21,6 +21,11 @@ body {
   margin-top: 0;
 }
 
+.headerText {
+    color: white;
+    font-family: sans-serif;
+}
+
 .center {
     text-align: center;
 }
