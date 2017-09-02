@@ -1,3 +1,5 @@
+// Can register blank and once that is done can login with blank
+
 
 function loadLoginForm () {
 
