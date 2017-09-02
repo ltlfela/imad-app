@@ -35,8 +35,8 @@ body {
             padding-right: 20px;
         }
 
-.padding {
-    padding: 25px 50px 75px 100px;
+.headPad {
+    padding: 1px;
 }       
         
 .inline { 
