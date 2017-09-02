@@ -44,7 +44,6 @@ var htmlTemplate = `
     margin:0 auto;   
     /*temporary text styles below*/
     text-align:left;
-    font-weight:bold;
     color:black;
 }
 </style>
