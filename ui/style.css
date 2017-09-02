@@ -8,7 +8,7 @@ body {
   background-repeat:repeat;
 }
 
-header {
+.header {
     font-family: sans-serif;
     background-image: url("https://i.imgur.com/VMUW87X.jpg");
     background-size: 1320px 600px;
