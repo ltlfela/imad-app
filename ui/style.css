@@ -14,7 +14,7 @@ body {
     background-size: 1320px 600px;
     background-repeat: no-repeat;
     height: 600px;
-    width: 1310px;
+    width: 1320px;
 }
 
 .center {
@@ -38,8 +38,6 @@ body {
             color: white;
             margin: 0 auto;
             font-family: sans-serif;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+            }
 
   
