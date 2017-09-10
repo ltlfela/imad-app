@@ -31,7 +31,7 @@
     <input type="text" id="name" placeholder="tattoo">
     <input type="submit" value="Print" id="submit_btn">
     <script>
-   document.getElementById("name").innerHTML = name;
+   document.getElementById("name").innerHTML;
     </script>
     </div>
         <script type="text/javascript" src="/ui/main.js">
