@@ -32,7 +32,9 @@
     <button type="submit" id="submit1"> Print </button>
     <script>
     var submit = document.getElementById("submit1")
-        submit.onclick = document.getElementById("name").innerHTML
+        submit.onclick = function() {
+            document.getElementById("name").innerHTML
+        }
     </script>
     </div>
         <script type="text/javascript" src="/ui/main.js">
