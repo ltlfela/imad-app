@@ -29,10 +29,7 @@
     <font color="black">Print her a tattoo :)</font>
     <br />
     <input type="text" id="name" placeholder="tattoo">
-    <input type="submit" value="Print" id="submit_btn">
-    <script>
-   document.getElementById("name").innerHTML;
-    </script>
+    <button type="submit" onclick="document.getElementById("name").innerHTML"> Print </button>
     </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
